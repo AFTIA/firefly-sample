@@ -2,6 +2,10 @@
 
 Welcome to my Adobe I/O Application!
 
+## Reading
+
+- https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=en
+
 ## Setup
 
 - Populate the `.env` file in the project root and fill it as shown [below](#env)
