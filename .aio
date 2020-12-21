@@ -1,0 +1,116 @@
+{
+  "project": {
+    "id": "4566206088344589905",
+    "name": "patfirefly",
+    "title": "PatFirefly",
+    "org": {
+      "id": "49495",
+      "name": "AFTIA Solutions Inc Americas Partner Sandbox",
+      "ims_org_id": "25BE0A5B5910E6130A495E91@AdobeOrg",
+      "details": {
+        "services": [
+          {
+            "name": "Adobe Stock",
+            "code": "StockSDK"
+          },
+          {
+            "name": "PDF Embed API",
+            "code": "ViewSDK"
+          },
+          {
+            "name": "Lightroom Services",
+            "code": "LightroomPartnersSDK"
+          },
+          {
+            "name": "Image Cutout - Creative Cloud Automation Services",
+            "code": "ImageCutoutV2SDK"
+          },
+          {
+            "name": "Content and Commerce AI",
+            "code": "ccai-sdk"
+          },
+          {
+            "name": "Creative Cloud Libraries",
+            "code": "CC-Libraries-SDK"
+          },
+          {
+            "name": "Adobe Analytics",
+            "code": "AdobeAnalyticsSDK"
+          },
+          {
+            "name": "Task Queue Manager",
+            "code": "DvaQueueSDK"
+          },
+          {
+            "name": "Adobe Analytics",
+            "code": "AdobeAnalyticsSDK"
+          },
+          {
+            "name": "Smart Content",
+            "code": "MCSmartContentServicesSDK"
+          },
+          {
+            "name": "Privacy Service API",
+            "code": "McGdprSDK"
+          },
+          {
+            "name": "Automated Forms Conversion",
+            "code": "AutomatedFormsSDK"
+          },
+          {
+            "name": "Asset Compute",
+            "code": "AssetComputeSDK"
+          },
+          {
+            "name": "Experience Platform Launch API",
+            "code": "McDtmSDK"
+          },
+          {
+            "name": "Cloud Manager",
+            "code": "CloudManagerSDK"
+          },
+          {
+            "name": "User Management API",
+            "code": "UserMgmtSDK"
+          },
+          {
+            "name": "Lightroom - Creative Cloud Automation Services",
+            "code": "LightroomCCESDK"
+          },
+          {
+            "name": "I/O Events",
+            "code": "CloudIntegrationSDK"
+          },
+          {
+            "name": "Audience Manager API",
+            "code": "AudienceManagerCustomerSDK"
+          },
+          {
+            "name": "I/O Management API",
+            "code": "AdobeIOManagementAPISDK"
+          },
+          {
+            "name": "Adobe Campaign",
+            "code": "CampaignSDK"
+          },
+          {
+            "name": "Places",
+            "code": "McPlacesSDK"
+          }
+        ]
+      }
+    },
+    "workspace": {
+      "id": "4566206088344591114",
+      "name": "PatDev",
+      "title": "PatDev",
+      "description": "A place for Pat to do some work",
+      "action_url": "https://49495-patfirefly-patdev.adobeioruntime.net",
+      "app_url": "https://49495-patfirefly-patdev.adobeio-static.net",
+      "details": {
+        "credentials": [],
+        "services": []
+      }
+    }
+  }
+}
