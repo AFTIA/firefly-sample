@@ -31,7 +31,7 @@ async function main (params) {
     logger.debug(stringParameters(params))
 
     // check for missing request input parameters and headers
-    const requiredParams = [/* add required params */]
+    const requiredParams = [ 'unit', 'long', 'lat' ]
     const requiredHeaders = ['Authorization']
     const errorMessage = checkMissingRequestInputs(params, requiredParams, requiredHeaders)
     if (errorMessage) {
@@ -43,14 +43,19 @@ async function main (params) {
     const token = getBearerToken(params)
 
     // replace this with the api you want to access
-    const apiEndpoint = 'https://adobeioruntime.net/api/v1/api-docs'
+    // const apiEndpoint = 'https://adobeioruntime.net/api/v1/api-docs'
 
     // fetch content from external api endpoint
-    const res = await fetch(apiEndpoint)
-    if (!res.ok) {
-      throw new Error('request to ' + apiEndpoint + ' failed with status code ' + res.status)
-    }
-    const content = await res.json()
+    // const res = await fetch(apiEndpoint)
+
+    // if (!res.ok) {
+    //   throw new Error('request to ' + apiEndpoint + ' failed with status code ' + res.status)
+    // }
+    // const content = await res.json()
+  
+    const weather = await fetch(`http://www.7timer.info/bin/astro.php?lon=${requiredHeaders.long}&lat=${requiredHeaders.lat}&ac=0&unit=${requiredHeaders.unit}&output=json&tzshift=0`)
+    const content = await weather.json()
+
     logger.debug('fetch content = ' + JSON.stringify(content, null, 2))
     const response = {
       statusCode: 200,
