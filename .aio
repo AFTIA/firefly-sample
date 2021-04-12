@@ -1,8 +1,8 @@
 {
   "project": {
-    "id": "4566206088344589905",
-    "name": "patfirefly",
-    "title": "PatFirefly",
+    "id": "4566206088344624513",
+    "name": "patfireflysample",
+    "title": "Sample Firefly Project",
     "org": {
       "id": "49495",
       "name": "AFTIA Solutions Inc Americas Partner Sandbox",
@@ -11,106 +11,122 @@
         "services": [
           {
             "name": "Adobe Stock",
-            "code": "StockSDK"
+            "code": "StockSDK",
+            "type": "adobeid"
           },
           {
             "name": "PDF Embed API",
-            "code": "ViewSDK"
+            "code": "ViewSDK",
+            "type": "adobeid"
           },
           {
             "name": "Lightroom Services",
-            "code": "LightroomPartnersSDK"
-          },
-          {
-            "name": "Image Cutout - Creative Cloud Automation Services",
-            "code": "ImageCutoutV2SDK"
+            "code": "LightroomPartnersSDK",
+            "type": "adobeid"
           },
           {
             "name": "Content and Commerce AI",
-            "code": "ccai-sdk"
+            "code": "ccai-sdk",
+            "type": "adobeid"
           },
           {
             "name": "Creative Cloud Libraries",
-            "code": "CC-Libraries-SDK"
+            "code": "CC-Libraries-SDK",
+            "type": "adobeid"
           },
           {
             "name": "Adobe Analytics",
-            "code": "AdobeAnalyticsSDK"
-          },
-          {
-            "name": "Task Queue Manager",
-            "code": "DvaQueueSDK"
+            "code": "AdobeAnalyticsSDK",
+            "type": "analytics"
           },
           {
             "name": "Adobe Analytics",
-            "code": "AdobeAnalyticsSDK"
+            "code": "AdobeAnalyticsSDK",
+            "type": "entp"
           },
           {
             "name": "Smart Content",
-            "code": "MCSmartContentServicesSDK"
+            "code": "MCSmartContentServicesSDK",
+            "type": "entp"
           },
           {
             "name": "Privacy Service API",
-            "code": "McGdprSDK"
+            "code": "McGdprSDK",
+            "type": "entp"
           },
           {
             "name": "Automated Forms Conversion",
-            "code": "AutomatedFormsSDK"
-          },
-          {
-            "name": "Asset Compute",
-            "code": "AssetComputeSDK"
+            "code": "AutomatedFormsSDK",
+            "type": "entp"
           },
           {
             "name": "Experience Platform Launch API",
-            "code": "McDtmSDK"
+            "code": "McDtmSDK",
+            "type": "entp"
+          },
+          {
+            "name": "Asset Compute",
+            "code": "AssetComputeSDK",
+            "type": "entp"
+          },
+          {
+            "name": "Adobe Photoshop APIs (Trial)",
+            "code": "CIS SDK",
+            "type": "entp"
           },
           {
             "name": "Cloud Manager",
-            "code": "CloudManagerSDK"
+            "code": "CloudManagerSDK",
+            "type": "entp"
           },
           {
             "name": "User Management API",
-            "code": "UserMgmtSDK"
-          },
-          {
-            "name": "Lightroom - Creative Cloud Automation Services",
-            "code": "LightroomCCESDK"
+            "code": "UserMgmtSDK",
+            "type": "entp"
           },
           {
             "name": "I/O Events",
-            "code": "CloudIntegrationSDK"
+            "code": "CloudIntegrationSDK",
+            "type": "entp"
           },
           {
             "name": "Audience Manager API",
-            "code": "AudienceManagerCustomerSDK"
-          },
-          {
-            "name": "I/O Management API",
-            "code": "AdobeIOManagementAPISDK"
+            "code": "AudienceManagerCustomerSDK",
+            "type": "entp"
           },
           {
             "name": "Adobe Campaign",
-            "code": "CampaignSDK"
+            "code": "CampaignSDK",
+            "type": "entp"
+          },
+          {
+            "name": "I/O Management API",
+            "code": "AdobeIOManagementAPISDK",
+            "type": "entp"
           },
           {
             "name": "Places",
-            "code": "McPlacesSDK"
+            "code": "McPlacesSDK",
+            "type": "entp"
           }
         ]
       }
     },
     "workspace": {
-      "id": "4566206088344591114",
-      "name": "PatDev",
-      "title": "PatDev",
-      "description": "A place for Pat to do some work",
-      "action_url": "https://49495-patfirefly-patdev.adobeioruntime.net",
-      "app_url": "https://49495-patfirefly-patdev.adobeio-static.net",
+      "id": "4566206088344626374",
+      "name": "Dev",
+      "title": "Dev",
+      "action_url": "https://49495-patfireflysample-dev.adobeioruntime.net",
+      "app_url": "https://49495-patfireflysample-dev.adobeio-static.net",
       "details": {
         "credentials": [],
         "services": []
       }
     }
+  },
+  "app": {
+    "actions": "actions",
+    "dist": "dist",
+    "web": "web-src"
   }
 }

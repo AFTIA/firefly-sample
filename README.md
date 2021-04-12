@@ -2,9 +2,20 @@
 
 Welcome to my Adobe I/O Application!
 
+## Installing aio CLI
+
+Make sure you have Node.JS 12 and NPM 6.14 installed in order to install the `aio cli`. Once you have that installed run the following command to install aio cli `npm install -g @adobe/aio-cli`
+
+**Note:** You may need to run this command as `sudo` (Linux | MacOSX) or `Administrator` (Windows) since you are installing a utility in the global section of npm
+
+## Project Location
+
+The project can be located at https://console.adobe.io/projects/49495/4566206088344624513/overview under the `AFTIA Solutions Inc Americas Partner Sandbox`
+
 ## Reading
 
 - https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=en
+- https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/getting_started/first_app.md
 
 ## Setup
 
@@ -17,6 +28,18 @@ Welcome to my Adobe I/O Application!
 
 By default the UI will be served locally but actions will be deployed and served from Adobe I/O Runtime. To start a
 local serverless stack and also run your actions locally use the `aio app run --local` option.
+
+The headers required to perform an API event are the following:
+
+```
+{
+    "Authorization": "Bearer ....",
+    "x-gw-ims-org-id": ""
+}
+```
+
+The `Authorization` is the JWT token that is generated from the `aio login`
+The IMS org can be retrieved by running `aio console org list`
 
 ## Test & Coverage
 

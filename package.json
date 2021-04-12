@@ -1,9 +1,9 @@
 {
-  "name": "patfirefly",
+  "name": "patfireflysample",
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "@adobe/aio-sdk": "^2.3.0",
+    "@adobe/aio-sdk": "^3.0.0",
     "node-fetch": "^2.6.0",
     "cloudevents-sdk": "^1.0.0",
     "uuid": "^8.0.0",
