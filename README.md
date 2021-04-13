@@ -109,6 +109,26 @@ and make sure you have the below config added
   } 
 ```
 
+## Changing Workspaces
+
+1. List the workspaces using `aio console:ws:list`
+2. Copy the workspace ID from the given output
+3. Execute `aio console:ws:select [ID]`
+4. Now you are in the given workspace
+
+If you execute `aio login` within this given context you will be given a JWT token for the given workspace and then you can use that to authenticate against
+
+## How to promote artifact
+
+Leverage the Github Actions workflows that come with the project archetype to promote the artifact.
+
+In order to allow the Github actions workflow to work appropriate you will need to retrieve two properties.
+
+1. AIO_RUNTIME_NAMESPACE_<WS_NAME>
+  - Using a browser login to Adobe IO select your project and select the workspace you want to deploy to and then select the workspace product and then copy the namespace on the top of the page
+2. AIO_RUNTIME_AUTH_<WS_NAME>
+  - Using a browser login to Adobe IO select your project and select the workspace you want to deploy to and then click `Download All` on the right top part of the page and the within the JSON payload there is a property called `auth` use that to perform deployments against the given payloads.
+
 ## Invoking Adobe Sign
 
 Set the params to the following value
