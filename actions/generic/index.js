@@ -15,8 +15,10 @@
 
 
 const fetch = require('node-fetch')
+const axios = require('axios')
 const { Core } = require('@adobe/aio-sdk')
 const { errorResponse, getBearerToken, stringParameters, checkMissingRequestInputs } = require('../utils')
+const adobesign = require('../adobesign');
 
 // main function that will be executed by Adobe I/O Runtime
 async function main (params) {
@@ -51,9 +53,11 @@ async function main (params) {
       throw new Error('request to ' + apiEndpoint + ' failed with status code ' + res.status)
     }
     const content = await res.json()
+    const agreementBody = await adobesign.agreement(params.headers, params.agreement);
+
     const response = {
       statusCode: 200,
-      body: content
+      body: agreementBody.data
     }
 
     // log the response status code
