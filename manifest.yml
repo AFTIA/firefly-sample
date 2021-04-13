@@ -3,7 +3,7 @@ packages:
     license: Apache-2.0
     actions:
       generic:
-        function: actions/generic/index.js
+        function: actions/adobesign/index.js
         web: 'yes'
         runtime: 'nodejs:12'
         inputs:

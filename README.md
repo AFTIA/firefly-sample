@@ -108,3 +108,38 @@ and make sure you have the below config added
     }
   } 
 ```
+
+## Invoking Adobe Sign
+
+Set the params to the following value
+
+```
+{
+    "headers": {
+        "auth": "Adobe Sign Auth Token",
+        "user": "userid | email"
+    },
+    "agreement": {
+        "fileInfos": [
+          {
+            "transientDocumentId": ""
+          }
+        ],
+        "name": "",
+        "participantSetsInfo": [
+          {
+            "memberInfos": [
+              {
+                "email": ""
+              }
+            ],
+            "order": 1,
+            "role": ""
+          }
+        ],
+        "signatureType": "",
+        "state": ""
+      }
+}
+```
+

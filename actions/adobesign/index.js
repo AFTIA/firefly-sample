@@ -15,10 +15,9 @@
 
 
 const fetch = require('node-fetch')
-const axios = require('axios')
 const { Core } = require('@adobe/aio-sdk')
 const { errorResponse, getBearerToken, stringParameters, checkMissingRequestInputs } = require('../utils')
-const adobesign = require('../adobesign');
+const adobesign = require('./adobesign');
 
 // main function that will be executed by Adobe I/O Runtime
 async function main (params) {
